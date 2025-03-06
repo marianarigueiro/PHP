@@ -7,13 +7,17 @@
 </head>
 <body>
     <?php 
-    for($i = 2; $i <= 100; $i++){
+    echo "Os números primos são: ";
+
+    for($i = 2; $i <= 1000; $i++){
         $primo = 1;
         for($s = 2; $s <= $i/2; $s++){
             $primo = $i % $s != 0;
         }
+
         echo $i * $primo == $i ? $i . "" : "";
-    }
+   echo "<br>";
+ }
     ?>
 </body>
 </html>
